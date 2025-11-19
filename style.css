@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(15, 30px);
+    grid-template-rows: repeat(15, 30px);
+    border: 2px solid black;
+    width: 450px;
+    height: 450px;
+    margin-right: 20px;
+}
+
+.cell {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.player1-home { background-color: red; }
+.player2-home { background-color: blue; }
+
+.path { background-color: white; }
+.safe { background-color: lightgreen; }
+
+.player1-piece {
+    background-color: red;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+}
+
+.player2-piece {
+    background-color: blue;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+}
+
+.game-info {
+    text-align: left;
+}
+
+#dice {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#dice-result {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
